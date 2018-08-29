@@ -1,0 +1,42 @@
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Form</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+
+
+</head>
+<body ng-app="root">
+	<form class="form-horizontal" role="form" ng-controller="index">
+
+		<div>
+
+			<div>
+				Name1:<input type="text" id="Name" ng-model="Name">
+				{{Name}}
+			</div>
+	
+			<div>
+				Email:<input type="text" id="Email" ng-model="Email">
+			</div>
+			<div>
+				Password:<input type="password"  id="Password" ng-model="Password">
+			</div>
+			<div>
+				<button type="submit" >Sign up</button>
+			</div>
+			
+			<div>
+		Favorite word: <input type="text" ng-model="favoriteWord" />
+		- {{favoriteWord}}
+	</div>
+
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Currency;
+import java.util.Locale;
+
+
+public class Vivek {
+
+	public static void main(String[] args) {
+
+		
+	/*	BigDecimal price =  new BigDecimal(246.47);
+		String format2 = new DecimalFormat("###,###,##").format(price);
+		
+		System.out.println(format2);*/
+		
+		NumberFormat numberFormat =
+			    NumberFormat.getCurrencyInstance(new Locale("da", "DK"));
+			numberFormat.setCurrency(Currency.getInstance("EUR"));
+
+			String currencyString = numberFormat.format(120.99);
+			System.out.println(currencyString);
+/*		
+		DecimalFormatSymbols unusualSymbols = new DecimalFormatSymbols(currentLocale);
+		unusualSymbols.setDecimalSeparator('|');
+		unusualSymbols.setGroupingSeparator('^');
+
+		String strange = "#,##0.###";
+		DecimalFormat weirdFormatter = new DecimalFormat(strange, unusualSymbols);
+		weirdFormatter.setGroupingSize(4);
+
+		String bizarre = weirdFormatter.format(12345.678);
+		System.out.println(bizarre);*/
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.vivek.jpaSpecs;
+
+public enum UserExp {
+	
+	
+
+}

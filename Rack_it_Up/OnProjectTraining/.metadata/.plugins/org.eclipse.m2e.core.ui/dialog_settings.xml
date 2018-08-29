@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="issueManagementUrl">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Vivek\OnProjectTraining\JPAExample"/>
+			<item value="D:\Vivek\OnProjectTraining\profile"/>
+			<item value="D:\Vivek\OnProjectTraining\try"/>
+			<item value="D:\Vivek\OnProjectTraining\spring-onlinework\onlinework-persistance"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="64" key="y"/>
+		<item value="443" key="x"/>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="groupId">
+		</list>
+		<list key="package">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="36" key="y"/>
+		<item value="484" key="x"/>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+			<item value="profile-web"/>
+			<item value="profile-interface"/>
+			<item value="profile-app"/>
+			<item value="profile-controller"/>
+			<item value="profile-App"/>
+			<item value="Spring-model"/>
+			<item value="Spring-web"/>
+			<item value="Spring-controller"/>
+			<item value="HelloWorld-Web"/>
+			<item value="HelloWorld-model"/>
+			<item value="HelloWeb-controller"/>
+			<item value="try"/>
+			<item value="student-interface"/>
+			<item value="student-controller"/>
+			<item value="student-model"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="ry"/>
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\gbs04412\Desktop\Persistance"/>
+			<item value="D:\projects\Persistance"/>
+			<item value="C:\Users\gbs04412\Downloads\spring-shoppingcart"/>
+			<item value="D:\Vivek\Training Document\MavenJPAExample"/>
+			<item value="D:\Vivek\student"/>
+			<item value="D:\Vivek\OnProjectTraining\Spring-example"/>
+			<item value="D:\Vivek\spring3-mvc-maven-annotation-hello-world-master"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="JPAExample"/>
+			<item value="JPAExample1"/>
+			<item value="SpringDataJPA"/>
+			<item value="it.sella.profile"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="JPAExample"/>
+			<item value="JPAExample1"/>
+			<item value="SpringDataJPA"/>
+			<item value="profile-web"/>
+			<item value="profile"/>
+			<item value="profile-interface"/>
+			<item value="profile-app"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

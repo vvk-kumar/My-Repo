@@ -1,0 +1,6 @@
+D\:/Vivek/OnProjectTraining/EARProj/EarContent/APP-INF/classes = APP-INF/classes
+D\:/Vivek/OnProjectTraining/Sarvlet/WebContent = Sarvlet.war
+D\:/Vivek/OnProjectTraining/.metadata/.plugins/org.eclipse.core.resources/Sarvlet/build/weboutput = Sarvlet.war
+D\:/Vivek/OnProjectTraining/Sarvlet/build/classes = Sarvlet.war/WEB-INF/classes
+D\:/Vivek/OnProjectTraining/EJBModuleClient/build/classes = APP-INF/lib/EJBModuleClient.jar
+D\:/Vivek/OnProjectTraining/EJBModule/build/classes = EJBModule.jar

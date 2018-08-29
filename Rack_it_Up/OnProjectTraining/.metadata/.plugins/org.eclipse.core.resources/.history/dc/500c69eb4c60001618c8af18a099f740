@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.sella.spring-shoppingcart</groupId>
+  <artifactId>spring-onlinework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>onlinework-core</module>
+  	<module>onlinework-client</module>
+  	<module>onlinework-batch</module>
+  	<module>onlinework-controller</module>
+  	<module>onlinework-ejb</module>
+  	<module>onlinework-persistance</module>
+  </modules>
+</project>

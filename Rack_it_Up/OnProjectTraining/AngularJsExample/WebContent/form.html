@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<form ng-submit="add()">
+ 
+ 
+ <p>Name:
+<input name="myName" ng-model="myName" required>
+</p>
+  
+  <p>Phone:
+<input name="myPhone" ng-model="myPhone" required>
+</p>
+
+<p>Email:
+<input name="myEmail" ng-model="myEmail" required>
+</p>
+
+<p>Adress:
+<input name="myAddress" ng-model="myAddress" required>
+</p>
+  
+  <input type="submit">
+  
+</form>
+
+
+<table>
+
+<tr>
+    <th>Name</th>
+    <th>phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+	<tr ng-repeat="x in profile" >
+	    <td>{{x.name}}</td>
+	    <td>{{x.phone}}</td>
+	    <td>{{x.email}}</td>
+	    <td>{{x.address}}</td>
+	    <td><button ng-click="remove($index)" >Remove</button></td>
+   		
+  </tr>
+</table>
+
+
+
+
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+    
+    $scope.profile = [];
+    var person = {
+    	name: 'Vivek',
+    	phone: '64464646',
+    	email: 'vivek@gmail.com',
+    	address: 'ranchi'
+    };
+    $scope.profile.push(person);
+  
+  $scope.add = function () {
+
+    var newPerson = {
+    	name: $scope.myName,
+    	phone: $scope.myPhone,
+    	email: $scope.myEmail,
+    	address: $scope.myAddress
+    };
+    $scope.profile.push(newPerson);
+   
+  }
+  
+  $scope.remove = function (x) {
+       
+        $scope.profile.splice(x, 1);
+    }
+});
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+import java.text.DecimalFormat;
+
+
+public class Vivek {
+
+	public static void main(String[] args) {
+
+String format2 = new DecimalFormat("#,###.00").format("26.47");
+		
+		System.out.println(format2);
+	}
+
+}

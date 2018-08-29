@@ -1,0 +1,32 @@
+<studentList>
+	<student id="1">
+		<name>Ramki</name>
+		<age>25</age>
+		<gender>Male</gender>
+		<address>
+			<city>Madurai</city>
+			<state>Tamil Nadu</state>
+			<pinCode>625001</pinCode>
+		</address>
+		<address>
+			<city>Chennai</city>
+			<state>Tamil Nadu</state>
+			<pinCode>600042</pinCode>
+		</address>
+	</student>
+	<student id="2">
+		<name>Vivek</name>
+		<age>25</age>
+		<gender>Male</gender>
+		<address>
+			<city>Madurai</city>
+			<state>Tamil Nadu</state>
+			<pinCode>625001</pinCode>
+		</address>
+		<address>
+			<city>Chennai</city>
+			<state>Tamil Nadu</state>
+			<pinCode>600042</pinCode>
+		</address>
+	</student>
+</studentList>

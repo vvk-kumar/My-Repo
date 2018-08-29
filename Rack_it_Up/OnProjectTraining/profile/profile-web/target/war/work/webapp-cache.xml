@@ -1,0 +1,44 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>index.jsp</string>
+          <string>WEB-INF/jsp/hello.jsp</string>
+          <string>WEB-INF/jsp/profile.jsp</string>
+          <string>WEB-INF/jsp/result.jsp</string>
+          <string>WEB-INF/user-servlet.xml</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/lib/profile-controller-0.0.1-SNAPSHOT.jar</string>
+          <string>WEB-INF/lib/servlet-api-3.0-alpha-1.jar</string>
+          <string>WEB-INF/lib/spring-core-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-asm-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/commons-logging-1.1.1.jar</string>
+          <string>WEB-INF/lib/spring-context-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-aop-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/aopalliance-1.0.jar</string>
+          <string>WEB-INF/lib/spring-beans-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-expression-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-support-3.1.2.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-web-3.1.2.RELEASE.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+  <dependenciesInfo>
+    <org.apache.maven.plugin.war.util.DependencyInfo>
+      <dependency>
+        <groupId>it.sella.profile</groupId>
+        <artifactId>profile-controller</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <type>jar</type>
+        <scope>compile</scope>
+        <exclusions/>
+        <optional>false</optional>
+      </dependency>
+      <targetFileName>profile-controller-0.0.1-SNAPSHOT.jar</targetFileName>
+    </org.apache.maven.plugin.war.util.DependencyInfo>
+  </dependenciesInfo>
+</webapp-structure>

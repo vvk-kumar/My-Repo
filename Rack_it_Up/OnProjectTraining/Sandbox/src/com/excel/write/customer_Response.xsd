@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="response"/>
+        <xs:element ref="magnewsList"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="description"/>
+        <xs:element ref="statusCode"/>
+        <xs:element ref="groupCode"/>
+        <xs:element ref="statusMsg"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="description" type="xs:NCName"/>
+  <xs:element name="statusCode" type="xs:string"/>
+  <xs:element name="groupCode" type="xs:NCName"/>
+  <xs:element name="statusMsg" type="xs:NCName"/>
+  <xs:element name="magnewsList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="size"/>
+        <xs:element ref="number"/>
+        <xs:element maxOccurs="unbounded" ref="content"/>
+        <xs:element ref="numberOfElements"/>
+        <xs:element ref="sort"/>
+        <xs:element ref="firstPage"/>
+        <xs:element ref="lastPage"/>
+        <xs:element ref="totalElements"/>
+        <xs:element ref="totalPages"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="size" type="xs:integer"/>
+  <xs:element name="number" type="xs:integer"/>
+  <xs:element name="content">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="count"/>
+        <xs:element ref="transactionData"/>
+        <xs:element ref="accountData"/>
+        <xs:element ref="appData"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="count">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="transactionData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="status"/>
+        <xs:element ref="dateLoaded"/>
+        <xs:element ref="ric61to365"/>
+        <xs:element ref="lastRicDate"/>
+        <xs:element ref="p2b61to365"/>
+        <xs:element ref="lastP2bDate"/>
+        <xs:element ref="isPositiveBalance"/>
+        <xs:element ref="balLessThan10Eur"/>
+        <xs:element ref="mov61to365"/>
+        <xs:element ref="lastMovDate"/>
+        <xs:element ref="crd61to365"/>
+        <xs:element ref="lastCrdDate"/>
+        <xs:element ref="p2p61to365"/>
+        <xs:element ref="lastP2pDate"/>
+        <xs:element ref="ric1to30"/>
+        <xs:element ref="ric31to60"/>
+        <xs:element ref="p2b1to30"/>
+        <xs:element ref="p2b31to60"/>
+        <xs:element ref="mov1to30"/>
+        <xs:element ref="mov31to60"/>
+        <xs:element ref="crd1to30"/>
+        <xs:element ref="crd31to60"/>
+        <xs:element ref="p2p1to30"/>
+        <xs:element ref="p2p31to60"/>
+        <xs:element ref="idSoggetto"/>
+        <xs:element ref="totAvlmtAnnual2000Eur"/>
+        <xs:element ref="totAvlmt60days1000Eur"/>
+        <xs:element ref="maxSpendingProvince1"/>
+        <xs:element ref="maxSpendingProvince2"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ric61to365" type="xs:integer"/>
+  <xs:element name="lastRicDate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="p2b61to365" type="xs:integer"/>
+  <xs:element name="lastP2bDate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="isPositiveBalance" type="xs:integer"/>
+  <xs:element name="balLessThan10Eur" type="xs:integer"/>
+  <xs:element name="mov61to365" type="xs:integer"/>
+  <xs:element name="lastMovDate" type="xs:string"/>
+  <xs:element name="crd61to365" type="xs:integer"/>
+  <xs:element name="lastCrdDate" type="xs:string"/>
+  <xs:element name="p2p61to365" type="xs:integer"/>
+  <xs:element name="lastP2pDate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="ric1to30" type="xs:integer"/>
+  <xs:element name="ric31to60" type="xs:integer"/>
+  <xs:element name="p2b1to30" type="xs:integer"/>
+  <xs:element name="p2b31to60" type="xs:integer"/>
+  <xs:element name="mov1to30" type="xs:integer"/>
+  <xs:element name="mov31to60" type="xs:integer"/>
+  <xs:element name="crd1to30" type="xs:integer"/>
+  <xs:element name="crd31to60" type="xs:integer"/>
+  <xs:element name="p2p1to30" type="xs:integer"/>
+  <xs:element name="p2p31to60" type="xs:integer"/>
+  <xs:element name="totAvlmtAnnual2000Eur" type="xs:integer"/>
+  <xs:element name="totAvlmt60days1000Eur" type="xs:integer"/>
+  <xs:element name="maxSpendingProvince1">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="maxSpendingProvince2">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="accountData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="id"/>
+        <xs:element ref="status"/>
+        <xs:element ref="provinciaIre"/>
+        <xs:element ref="provinciaIdo"/>
+        <xs:element ref="accOpenedDate"/>
+        <xs:element ref="accClosingDate"/>
+        <xs:element ref="accValidity"/>
+        <xs:element ref="crdOpenDate"/>
+        <xs:element ref="crdClosingDate"/>
+        <xs:element ref="dateLoaded"/>
+        <xs:element ref="surName"/>
+        <xs:element ref="dob"/>
+        <xs:element ref="cf"/>
+        <xs:element ref="cfHash"/>
+        <xs:element ref="comuneIre"/>
+        <xs:element ref="capIre"/>
+        <xs:element ref="comuneIdo"/>
+        <xs:element ref="capIdo"/>
+        <xs:element ref="mobileNo"/>
+        <xs:element ref="accType"/>
+        <xs:element ref="crdStatus"/>
+        <xs:element ref="crdType"/>
+        <xs:element ref="ibCode"/>
+        <xs:element ref="idSoggetto"/>
+        <xs:element ref="email"/>
+        <xs:element ref="crdStatusDescription"/>
+        <xs:element ref="cambioStatoFisicita"/>
+        <xs:element ref="crdPosActiveStatus"/>
+        <xs:element ref="crdAtmActiveStatus"/>
+        <xs:element ref="crdEcomActiveStatus"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:NCName"/>
+  <xs:element name="provinciaIre" type="xs:NCName"/>
+  <xs:element name="provinciaIdo" type="xs:NCName"/>
+  <xs:element name="accOpenedDate" type="xs:integer"/>
+  <xs:element name="accClosingDate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="accValidity" type="xs:NCName"/>
+  <xs:element name="crdOpenDate" type="xs:integer"/>
+  <xs:element name="crdClosingDate">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="surName" type="xs:NCName"/>
+  <xs:element name="dob" type="xs:integer"/>
+  <xs:element name="cf" type="xs:NCName"/>
+  <xs:element name="cfHash" type="xs:string"/>
+  <xs:element name="comuneIre" type="xs:NCName"/>
+  <xs:element name="capIre" type="xs:integer"/>
+  <xs:element name="comuneIdo" type="xs:NCName"/>
+  <xs:element name="capIdo" type="xs:integer"/>
+  <xs:element name="mobileNo" type="xs:integer"/>
+  <xs:element name="accType" type="xs:string"/>
+  <xs:element name="crdStatus" type="xs:NCName"/>
+  <xs:element name="crdType" type="xs:NCName"/>
+  <xs:element name="ibCode" type="xs:integer"/>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="crdStatusDescription" type="xs:NCName"/>
+  <xs:element name="cambioStatoFisicita" type="xs:integer"/>
+  <xs:element name="crdPosActiveStatus" type="xs:NCName"/>
+  <xs:element name="crdAtmActiveStatus" type="xs:NCName"/>
+  <xs:element name="crdEcomActiveStatus" type="xs:NCName"/>
+  <xs:element name="appData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="id"/>
+        <xs:element ref="status"/>
+        <xs:element ref="dateLoaded"/>
+        <xs:element ref="noCardsInWallet"/>
+        <xs:element ref="goalsCreated1to30"/>
+        <xs:element ref="noOfTrigger"/>
+        <xs:element ref="appDownloaded"/>
+        <xs:element ref="mobilePlatform"/>
+        <xs:element ref="appVersion"/>
+        <xs:element ref="appLastAccessed"/>
+        <xs:element ref="login8to21"/>
+        <xs:element ref="login22to84"/>
+        <xs:element ref="login1to7"/>
+        <xs:element ref="idSoggetto"/>
+        <xs:element ref="noCategoriesCreated"/>
+        <xs:element ref="noDescriptionsIncluded"/>
+        <xs:element ref="goalsCreated31to60"/>
+        <xs:element ref="goalsCreated61to365"/>
+        <xs:element ref="latestGoalCreatedDt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="noCardsInWallet" type="xs:integer"/>
+  <xs:element name="goalsCreated1to30" type="xs:integer"/>
+  <xs:element name="noOfTrigger" type="xs:integer"/>
+  <xs:element name="appDownloaded" type="xs:integer"/>
+  <xs:element name="mobilePlatform">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="appVersion">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="appLastAccessed" type="xs:integer"/>
+  <xs:element name="login8to21" type="xs:integer"/>
+  <xs:element name="login22to84" type="xs:integer"/>
+  <xs:element name="login1to7" type="xs:integer"/>
+  <xs:element name="noCategoriesCreated" type="xs:integer"/>
+  <xs:element name="noDescriptionsIncluded" type="xs:integer"/>
+  <xs:element name="goalsCreated31to60" type="xs:integer"/>
+  <xs:element name="goalsCreated61to365" type="xs:integer"/>
+  <xs:element name="latestGoalCreatedDt">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="numberOfElements" type="xs:integer"/>
+  <xs:element name="sort">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="firstPage" type="xs:boolean"/>
+  <xs:element name="lastPage" type="xs:boolean"/>
+  <xs:element name="totalElements" type="xs:integer"/>
+  <xs:element name="totalPages" type="xs:integer"/>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="status" type="xs:integer"/>
+  <xs:element name="dateLoaded" type="xs:integer"/>
+  <xs:element name="idSoggetto" type="xs:integer"/>
+</xs:schema>

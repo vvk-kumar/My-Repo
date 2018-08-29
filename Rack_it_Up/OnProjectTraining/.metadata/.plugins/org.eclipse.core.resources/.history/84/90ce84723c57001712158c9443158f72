@@ -1,0 +1,16 @@
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
+
+public class Vivek {
+
+	public static void main(String[] args) {
+
+		
+		BigDecimal price =  new BigDecimal(246.47);
+		String format2 = new DecimalFormat("###,###,##").format(price);
+		
+		System.out.println(format2);
+	}
+
+}
